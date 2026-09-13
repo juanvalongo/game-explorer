@@ -1,13 +1,21 @@
 import './GameCard.css'
 
-function GameCard(props) {
+function GameCard({ titulo, genero, ano, nota, imagem, descricao }) {
   return (
     <article className="card-jogo">
-      <img src={props.imagem} alt={props.titulo} /> 
+        <img src={imagem} alt={titulo} />
 
-      <h2>{props.titulo}</h2>
+        <div className="conteudo-card">    
+            <h2>{titulo}</h2>
+            
+            <p>{descricao}</p>
 
-      <p>Gênero: {props.genero}</p>
+            <div className="informacoes-jogo">
+                <span>{genero}</span>
+                <span>{ano}</span>
+                <span>⭐ {nota}</span>
+            </div>
+        </div>
     </article>
   )
 }
