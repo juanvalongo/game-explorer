@@ -1,0 +1,24 @@
+.card-jogo {
+  width: 250px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-jogo img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-jogo h2 {
+  margin: 16px 16px 8px;
+  font-size: 1.2rem;
+}
+
+.card-jogo p {
+  margin: 0 16px 16px;
+  color: #555;
+}
