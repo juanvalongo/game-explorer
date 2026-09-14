@@ -5,7 +5,7 @@ import Detalhes from './pages/Detalhes'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/game-explorer">
       <Routes>  
         <Route path="/" element={<Home />} />
         <Route path="/detalhes/:id" element={<Detalhes />} />
